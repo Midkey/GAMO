@@ -197,7 +197,7 @@ if __name__ == '__main__':
         video_root = os.path.join(root, dataset_name)
 
         save_note = tracker_name + '{}-_RT-motion_enlarge-{:02d}-graph_match-{}'
-        fmt = ' --- %Y-%m-%d %a %H:%M'  # 格式化时间
+        fmt = ' --- %Y-%m-%d %a %H:%M' 
         save_note += time.strftime(fmt, time.localtime(time.time()))
         main(video_root, save_note, tracker_name, dataset_name, visulization=not use_time, set_video_name=set_name)
 
